@@ -10,3 +10,49 @@ img {
   height: auto;
   display: block;
 }
+
+:root {
+  /* Farver */
+  --background-color: #dcc3a5;
+  --background-light: #fffefd;
+  --primary-color: #f7a6b3;
+  --secondary-color: #b6c3a5;
+  --tertiary-color: #f5a86c;
+  --accent-color: #e24a54;
+  --text-color: #1f1b1d;
+
+  /* Fonte */
+  --hurricane: "Hurricane", serif;
+  --bitter: "Bitter", serif;
+  --raleway: "Raleway", sans-serif;
+
+  /* H1 */
+  --h1-size: 1rem;
+  --h1-size-s: 2rem;
+  --h1-size-m: 3rem;
+  --h1-size-l: 4rem;
+
+  /* H2 */
+  --h2-size: 1rem;
+  --h2-size-s: 2rem;
+  --h2-size-m: 3rem;
+  --h2-size-l: 4rem;
+
+  /* H3 */
+  --h3-size: 1rem;
+  --h3-size-s: 2rem;
+  --h3-size-m: 3rem;
+  --h3-size-l: 4rem;
+
+  /* H4 */
+  --h4-size: 1rem;
+  --h4-size-s: 2rem;
+  --h4-size-m: 3rem;
+  --h4-size-l: 4rem;
+
+  /* P */
+  --p-size: 1rem;
+  --p-size-s: 2rem;
+  --p-size-m: 3rem;
+  --p-size-l: 4rem;
+}
