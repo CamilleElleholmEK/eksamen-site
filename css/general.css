@@ -11,18 +11,283 @@ img {
   display: block;
 }
 
-/* Mobile first */
+/******************** Mobile first *********************/
+
+/* General */
+body {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+h1 {
+  font-family: var(--hurricane);
+  font-size: var(--h1-size);
+  font-weight: 500;
+}
+
+h2 {
+  font-family: var(--bitter);
+  font-size: var(--h2-size);
+  font-weight: 500;
+}
+
+h3 {
+  font-family: var(--bitter);
+  font-size: var(--h3-size);
+  font-weight: 400;
+}
+
+h4 {
+  font-family: var(--raleway);
+  font-size: var(--h4-size);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p, a {
+  font-family: var(--raleway);
+  font-size: var(--p-size);
+  font-weight: 400;
+}
+
+/* Header */
+.nav-header {
+  display: none;
+  font-family: var(--raleway);
+  color: var(--text-color);
+}
+
+.socials {
+  display: none;
+}
+
+.burger {
+  display: block;
+  background-color: transparent;
+  border: 0;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .nav-header {
+  display: block;
+  background-color: var(--background-light);
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav.active .nav-header li {
+  margin: 10px 20px;
+  list-style: none;
+}
+
+nav.active .nav-header a {
+  font-size: 24px;
+  font-family: var(--raleway);
+  color: var(--text-color);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-wrapper img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-header li {
+  margin-right: 20px;
+}
+
+.nav-header li:last-child {
+  margin-right: 0;
+}
+
+.nav-header a {
+  display: block;
+  padding: 10px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.nav-header a:hover {
+  color: #ff0000;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--secondary-color);
+  align-items: center;
+}
+
+.footer-bund {
+  background-color: var(--secondary-color-dark);
+  color: var(--background-light);
+  text-align: center;
+}
+
+.logo-wrapper-footer img {
+  height: 50px;
+  width: auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 /* S */
 @media (min-width: 481px) {
 
+/* General */
+
+h1 {
+  font-size: var(--h1-size-s);
+}
+
+h2 {
+  font-size: var(--h2-size-s);
+}
+
+h3 {
+  font-size: var(--h3-size-s);
+}
+
+h4 {
+  font-size: var(--h4-size-s);
+}
+
+p, a {
+font-size: var(--p-size-s);
+}
+
 }
 /* M */
 @media (min-width: 770px) {
+  
+  /* Header */
+  .logo-wrapper img {
+  height: 70px;
+  width: auto;
+}
+  
+  /* General */
 
+h1 {
+  font-size: var(--h1-size-m);
+}
+
+h2 {
+  font-size: var(--h2-size-m);
+}
+
+h3 {
+  font-size: var(--h3-size-m);
+}
+
+h4 {
+  font-size: var(--h4-size-m);
+}
+
+p, a {
+font-size: var(--p-size-m);
+}
+
+  /* Header */
+  .burger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-header {
+    display: flex;
+    list-style: none;
+    justify-self: center;
+  }
+
+  header .socials {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    justify-self: flex-end;
+  }
+
+  .socials li {
+    padding-left: 1rem;
+  }
 }
 
 /* L */
 @media (min-width: 1200px) {
 
+   /* General */
+
+h1 {
+  font-size: var(--h1-size-l);
+}
+
+h2 {
+  font-size: var(--h2-size-l);
+}
+
+h3 {
+  font-size: var(--h3-size-l);
+}
+
+h4 {
+  font-size: var(--h4-size-l);
+}
+
+p, a {
+font-size: var(--p-size-l);
+}
 }
