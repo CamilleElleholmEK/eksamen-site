@@ -11,15 +11,98 @@ img {
   display: block;
 }
 
-/* Mobile first */
+/********************************************** Mobile first *************************************************/
 
-/* S */
-@media (min-width: 481px) {
+/***************** Hero ************/
+
+.hero {
+  background-color: var(--background-color);
+  background-image: url(../img/striber.svg);
+  background-size: 480px 480px;
+  background-repeat: repeat;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-/* M */
+
+.hero h1 {
+  width: 18rem;
+  text-align: center;
+  line-height: 95%;
+  padding-bottom: 3rem;
+  margin: auto;
+  /* transform: rotate(-5deg); */
+}
+
+.hero p {
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin: auto;
+}
+
+.btn-orange {
+  margin: auto;
+}
+
+/******************* Teaser ****************/
+
+.teaser {
+  background-color: var(--primary-color-light);
+  background-image: url(../img/sloejfer.svg);
+  padding-top: 3rem;
+  border-top: solid var(--accent-color) 3px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.teaser-text {
+  background-color: var(--background-light);
+  border-radius: 10px;
+  padding: 4.5rem 4.5rem 2rem 4.5rem;
+}
+
+.teaser-text h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.teaser-text p {
+  padding-bottom: 2rem;
+}
+
+/*************** Tema oversigt *************/
+
+.tema-oversigt {
+  background-color: var(--background-color);
+  background-image: url(../img/striber.svg);
+  background-size: 480px 480px;
+  background-repeat: repeat;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.tema-card {
+  background-color: var(--background-light);
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 3.5rem;
+  text-align: center;
+ 
+}
+
+.tema-card p {
+  border-bottom: dotted var(--tertiary-color) 2px;
+}
+
+/*************************************************** S ******************************************************/
+@media (min-width: 481px) {
+  /*************** Hero ************/
+}
+/*************************************************** M *******************************************************/
 @media (min-width: 770px) {
 }
 
-/* L */
+/**************************************************** L ******************************************************/
 @media (min-width: 1200px) {
 }
