@@ -20,7 +20,11 @@
   <body>
     <header>
       <div class="logo-wrapper">
-        <a href="index.html"><img src="img/logo_main.svg" alt="Logo med teksten 'Camille Elleholm'"></a>
+        <a href="index.html"
+          ><img
+            src="img/logo_main.svg"
+            alt="Logo med teksten 'Camille Elleholm'"
+        /></a>
       </div>
       <nav>
         <ul class="nav-header">
@@ -33,37 +37,83 @@
           <span class="line"></span>
         </button>
       </nav>
-       <ul class="socials">
-          <li><a href="/"><img src="img/mail_main.svg" alt="Email ikon"></a></li>
-          <li><a href="/"><img src="img/linkedin_main.svg" alt="LinkedIn logo"></a></li>
-          <li><a href="/"><img src="img/facebook_main.svg" alt="Facebook logo"></a></li>
-          <li><a href="/"><img src="img/instagram_main.svg" alt="Instagram logo"></a></li>
-        </ul>
+      <ul class="socials">
+        <li>
+          <a href="/"><img src="img/mail_main.svg" alt="Email ikon" /></a>
+        </li>
+        <li>
+          <a href="/"
+            ><img src="img/linkedin_main.svg" alt="LinkedIn logo"
+          /></a>
+        </li>
+        <li>
+          <a href="/"
+            ><img src="img/facebook_main.svg" alt="Facebook logo"
+          /></a>
+        </li>
+        <li>
+          <a href="/"
+            ><img src="img/instagram_main.svg" alt="Instagram logo"
+          /></a>
+        </li>
+      </ul>
     </header>
     <main>
-      <div class="krumme">
-        <a href="index.html">Forside</a>
-        <p class="krumme-pil">></p>
-        <a href="portfolio.html">Portfolio</a>
-      </div>
-      <section>
-        <div>
-          <h1>Overskrift</h1>
-          <p>Meget tekst her</p>
+      <section class="portfolio-hero">
+        <div class="krumme">
+          <a href="index.html">Forside</a>
+          <p class="krumme-pil">></p>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="portfolio-card">
+          <svg
+            class="portfolio-heart"
+            viewBox="0 0 52 50"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M8.58663 2.40218C20.2441 -0.99928 22.8916 13.7929 24.4254 13.9329C25.9593 14.0728 37.1248 -4.97478 46.7661 1.25073C64.5314 12.722 30.8624 49.3142 21.8814 49.5778C12.9004 49.8413 -13.4793 8.84067 8.58663 2.40218Z"
+              fill="currentColor"
+            />
+          </svg>
+          <div class="portfolio-text">
+            <h1>Portfolio</h1>
+            <p>
+              Her kan du klikke dig videre til de forskellige
+              undervisningstemaer fra semesteret. Hvert tema giver et kort
+              indblik i, hvad jeg har lavet, hvad jeg har lært, og hvordan jeg
+              har oplevet processen undervejs.
+            </p>
+          </div>
         </div>
       </section>
-      <section>
-        <div class="btn-orange"><a href="tema1.html">Tema 1</a></div>
-        <div class="btn-red"><a href="tema2.html">Tema 2</a></div>
-        <div class="btn-orange"><a href="tema3.html">Tema 3</a></div>
-        <div class="btn-red"><a href="tema4.html">Tema 4</a></div>
-        <div class="btn-orange"><a href="tema5.html">Tema 5</a></div>
+      <section class="portfolio-btns">
+        <a class="btn-orange" href="tema1.html"
+            >Tema 1 <span class="arrow-orange"></span
+          ></a>
+        <a class="btn-red" href="tema2.html"
+            >Tema 2 <span class="arrow-red"></span
+          ></a>
+        <a class="btn-orange" href="tema3.html"
+            >Tema 3<span class="arrow-orange"></span
+          ></a>
+        <a class="btn-red" href="tema4.html"
+            >Tema 4 <span class="arrow-red"></span
+          ></a>
+        <a class="btn-orange" href="tema5.html"
+            >Tema 5 <span class="arrow-orange"></span
+          ></a>
       </section>
     </main>
     <footer>
       <div class="footer-top">
         <div class="logo-wrapper-footer">
-          <p>Logo her</p>
+          <a href="index.html"
+            ><img
+              src="img/logo_main.svg"
+              alt="Logo med teksten 'Camille Elleholm'"
+          /></a>
         </div>
         <nav>
           <ul class="nav-footer">
@@ -71,11 +121,17 @@
             <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </nav>
-        <div class="socials">
-          <a href="/">Mail</a>
-          <a href="/">Linkedin</a>
-          <a href="/">Facebook</a>
-          <a href="/">Instagram</a>
+        <div class="socials-footer">
+          <a href="/"><img src="img/mail_main.svg" alt="Email ikon" /></a>
+          <a href="/"
+            ><img src="img/linkedin_main.svg" alt="LinkedIn logo"
+          /></a>
+          <a href="/"
+            ><img src="img/facebook_main.svg" alt="Facebook logo"
+          /></a>
+          <a href="/"
+            ><img src="img/instagram_main.svg" alt="Instagram logo"
+          /></a>
         </div>
       </div>
       <div class="footer-bund">
@@ -83,6 +139,6 @@
       </div>
     </footer>
     <!-- Javascript -->
-     <script src="js/general.js"></script>
+    <script src="js/general.js"></script>
   </body>
 </html>
