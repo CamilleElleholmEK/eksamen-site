@@ -13,13 +13,125 @@ img {
 
 /* Mobile first */
 
+.portfolio-hero {
+  background-color: var(--background-color);
+  background-image: url(../img/tern.svg);
+  background-size: 480px 480px;
+  background-repeat: repeat;
+  padding: 1rem 3rem 3rem 3rem;
+  /* display: flex;
+  flex-direction: column; */
+  border-bottom: solid var(--accent-color) 3px;
+  /* align-items: center; */
+}
+
+.portfolio-card {
+  background-color: var(--background-light);
+  border-radius: 20px;
+  padding: 3rem;
+  position: relative;
+  overflow: visible;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-text p {
+margin-top: 2rem;
+}
+
+.portfolio-heart {
+  position: absolute;
+  top: -10px;
+  right: -18px;
+  width: 4rem;
+  height: auto;
+  color: var(--accent-color);
+  transform: rotate(10deg);
+  filter: drop-shadow(var(--shadow));
+  z-index: 2;
+}
+
+.portfolio-btns {
+  background-color: var(--background-light);
+  /* background-image: url(../img/striber.svg);
+  background-size: 480px 480px;
+  background-repeat: repeat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.portfolio-btns .btn-orange, .btn-red {
+  margin-top: 2rem;
+}
+
+.portfolio-btns a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.krumme {
+  margin: auto;
+}
+
 /* S */
 @media (min-width: 481px) {
+
+  
+
 }
 /* M */
 @media (min-width: 850px) {
+
+.portfolio-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .portfolio-btns .btn-orange, .btn-red {
+    margin: 1rem;
+  }
+
+.portfolio-hero {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.portfolio-card, .krumme {
+  max-width: 50rem;
+}
+
+.krumme {
+  max-width: 50rem;
+}
+
 }
 
 /* L */
 @media (min-width: 1200px) {
+
+  .portfolio-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+.portfolio-card, .krumme {
+  max-width: 60rem;
+}
+
+.krumme {
+  max-width: 60rem;
+}
+
 }

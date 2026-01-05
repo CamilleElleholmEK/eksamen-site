@@ -15,6 +15,7 @@ img {
   /* Farver */
   --background-color: #F9F5EE;
   --background-light: #fffefd;
+  --background-light-transparent: #fffefda0;
   --primary-color: #f7a6b3;
   --primary-color-light: #F8CED0;
   --secondary-color: #b6c3a5;

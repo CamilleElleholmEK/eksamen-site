@@ -57,6 +57,9 @@ a {
 .krumme {
   display: flex;
   padding-top: 1rem;
+  background-color: var(--background-light-transparent);
+  border-radius: 20px;
+  padding: 0.5rem;
 }
 
 .krumme a {
