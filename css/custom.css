@@ -38,25 +38,25 @@ img {
   --h2-size: 1.7rem;
   --h2-size-s: 1.8rem;
   --h2-size-m: 2rem;
-  --h2-size-l: 2.2rem;
+  --h2-size-l: 2rem;
 
   /* H3 */
   --h3-size: 1.7rem;
   --h3-size-s: 1.8rem;
   --h3-size-m: 2rem;
-  --h3-size-l: 2.2rem;
+  --h3-size-l: 2rem;
 
   /* H4 */
   --h4-size: 1.1rem;
   --h4-size-s: 1.2rem;
-  --h4-size-m: 1.4rem;
-  --h4-size-l: 1.8rem;
+  --h4-size-m: 1.3rem;
+  --h4-size-l: 1.5rem;
 
   /* P */
   --p-size: 1.1rem;
   --p-size-s: 1.2rem;
-  --p-size-m: 1.4rem;
-  --p-size-l: 1.8rem;
+  --p-size-m: 1.3rem;
+  --p-size-l: 1.5rem;
 
   /* Effekter */
   --shadow: -4px 4px 10px #0000003e;

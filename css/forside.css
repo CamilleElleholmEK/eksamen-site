@@ -55,15 +55,39 @@ img {
   padding-right: 3rem;
 }
 
-.teaser-text {
+.teaser-card {
   background-color: var(--background-light);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 4.5rem 4.5rem 2rem 4.5rem;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.teaser-heart {
+  position: absolute;
+  top: -10px;
+  right: -18px;
+  width: 4rem;
+  height: auto;
+  color: var(--accent-color);
+  transform: rotate(10deg);
+  filter: drop-shadow(var(--shadow));
+  z-index: 2;
+}
+
+.teaser-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .teaser-text h2 {
-  text-align: center;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .teaser-text p {
@@ -77,32 +101,248 @@ img {
   background-image: url(../img/striber.svg);
   background-size: 480px 480px;
   background-repeat: repeat;
-  padding-top: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 3rem;
 }
 
 .tema-card {
   background-color: var(--background-light);
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 2rem;
   padding: 3.5rem;
   text-align: center;
- 
+  outline: var(--tertiary-color) solid 2px;
+  outline-offset: -1rem;
 }
 
 .tema-card p {
   border-bottom: dotted var(--tertiary-color) 2px;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.tema-oversigt h2 {
+  border: solid var(--tertiary-color) 2px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 3rem;
+  width: fit-content;
+  margin: auto;
 }
 
 /*************************************************** S ******************************************************/
 @media (min-width: 481px) {
-  /*************** Hero ************/
+  /***************** Hero ************/
+
+  .hero {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    padding-bottom: 4rem;
+    /* transform: rotate(-5deg); */
+  }
+
+  .hero p {
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .hero-text {
+    max-width: 32rem;
+  }
+
+  /******************* Teaser ****************/
+
+  .teaser {
+    padding: 4rem;
+  }
+
+  .teaser-card {
+    padding: 3.6rem 3.6rem 2.6rem 3.6rem;
+  }
+
+  .teaser-text h2 {
+    padding-bottom: 2.6rem;
+    text-align: center;
+  }
+
+  .teaser-text p {
+    padding-bottom: 2.6rem;
+  }
+
+  .teaser-text {
+    max-width: 32rem;
+  }
+
+  .teaser-inner .img-wrapper img {
+    max-width: 65vw;
+    justify-self: center;
+  }
+
+  /*************** Tema oversigt *************/
+
+  .tema-oversigt {
+    padding: 4rem;
+  }
+
+  .tema-card {
+    margin-top: 2rem;
+    padding: 3.6rem;
+  }
+
+  .tema-card p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tema-oversigt h2 {
+    padding: 3.6rem;
+  }
 }
 /*************************************************** M *******************************************************/
-@media (min-width: 770px) {
+@media (min-width: 850px) {
+  /***************** Hero ************/
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+
+  .hero img {
+    width: fit-content;
+    height: auto;
+  }
+
+  .hero h1 {
+    width: auto;
+  }
+
+  .hero-text {
+    max-width: 35rem;
+  }
+
+  /************** Teaser **************/
+
+  .teaser {
+    padding: 3rem 2rem 3rem 1.5rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .teaser-inner {
+    display: grid;
+    grid-template-columns: clamp(200px, 26vw, 280px) minmax(0, 1fr);
+    column-gap: 0;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .teaser-card {
+    /* padding: 2rem; */
+    order: 2;
+    padding: 1.2rem 1.6rem;
+    position: relative;
+    justify-self: start;
+    z-index: 2;
+    /* margin-left: -2.5rem; */
+    margin: auto 0;
+  }
+
+  .teaser-inner .img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 3;
+    justify-self: end;
+    margin-right: -1rem;
+  }
+
+  .teaser-text h2 {
+    padding-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  .teaser-text p {
+    padding-bottom: 1.2rem;
+  }
+
+  /**************** Tema oversigt ************/
+
+  .tema-oversigt {
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .tema-card {
+    padding: 3.5rem;
+    text-align: center;
+    outline: var(--tertiary-color) solid 2px;
+    outline-offset: -1rem;
+  }
+
+  .tema-card p {
+    border-bottom: dotted var(--tertiary-color) 2px;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .tema-oversigt h2 {
+    padding: 3.6rem;
+  }
 }
 
 /**************************************************** L ******************************************************/
 @media (min-width: 1200px) {
+
+/********** Hero **********/
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+
+  .hero img {
+    width: fit-content;
+    height: auto;
+  }
+
+  .hero h1 {
+    width: auto;
+  }
+
+  .hero-text {
+    max-width: 35rem;
+    justify-self: center;
+  }
+
+
+/********* Tema oversigt ***********/
+
+.tema-oversigt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+.btn-orange {
+  width: 16rem;
+}
+
 }
