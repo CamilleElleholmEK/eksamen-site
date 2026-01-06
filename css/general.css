@@ -95,6 +95,10 @@ a {
   color: var(--text-color);
 }
 
+.btn-orange:hover, .btn-red:hover {
+  scale: 1.1;
+} 
+
 .arrow-orange {
   position: absolute;
   right: 1.4rem;
@@ -140,6 +144,10 @@ a {
   display: none;
   font-family: var(--raleway);
   color: var(--text-color);
+}
+
+.social-link:hover {
+  scale: 1.1;
 }
 
 .socials {
@@ -223,7 +231,7 @@ header {
 }
 
 .nav-header a:hover {
-  color: #ff0000;
+  text-decoration: underline;
 }
 
 .burger {
@@ -278,6 +286,10 @@ footer {
 .nav-footer a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.nav-footer a:hover {
+  text-decoration: underline;
 }
 
 .nav-footer li {
