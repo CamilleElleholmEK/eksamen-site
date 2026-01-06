@@ -37,11 +37,10 @@ main h2 {
   flex-direction: column;
   margin-bottom: 3rem;
   box-shadow: var(--shadow);
-  line-height: 175%;
 }
 
 .indhold-card p {
-  line-height: 140%;
+  line-height: 150%;
   margin-top: 1rem;
 }
 

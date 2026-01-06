@@ -20,9 +20,7 @@ img {
   background-image: url(../img/striber.svg);
   background-size: 480px 480px;
   background-repeat: repeat;
-  padding-top: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 3rem;
 }
 
 .hero h1 {
@@ -41,6 +39,14 @@ img {
 }
 
 .btn-orange {
+  margin: auto;
+}
+
+.hero img {
+  padding-top: 3rem;
+  min-width: 19rem;
+  max-width: 21rem;
+  height: auto;
   margin: auto;
 }
 
@@ -67,6 +73,13 @@ img {
   align-items: center;
   margin-bottom: 3rem;
   box-shadow: var(--shadow);
+}
+
+.teaser-inner img {
+  min-width: 19rem;
+  max-width: 21rem;
+  height: auto;
+  margin: auto;
 }
 
 .teaser-heart {
@@ -159,6 +172,11 @@ img {
     max-width: 32rem;
   }
 
+  .hero img {
+    min-width: 21rem;
+    max-width: 28rem;
+  }
+
   /******************* Teaser ****************/
 
   .teaser {
@@ -183,8 +201,8 @@ img {
   }
 
   .teaser-inner .img-wrapper img {
-    max-width: 65vw;
-    justify-self: center;
+    min-width: 21rem;
+    max-width: 28rem;
   }
 
   /*************** Tema oversigt *************/
@@ -220,8 +238,10 @@ img {
   }
 
   .hero img {
-    width: fit-content;
+    min-width: 25rem;
+    max-width: 30rem;
     height: auto;
+    margin: auto;
   }
 
   .hero h1 {
@@ -261,7 +281,8 @@ img {
   }
 
   .teaser-inner .img-wrapper img {
-    width: 100%;
+    min-width: 15rem;
+    max-width: 35rem;
     height: auto;
     display: block;
     position: relative;
@@ -310,9 +331,8 @@ img {
 
 /**************************************************** L ******************************************************/
 @media (min-width: 1200px) {
-
-/********** Hero **********/
-.hero {
+  /********** Hero **********/
+  .hero {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
@@ -320,8 +340,8 @@ img {
   }
 
   .hero img {
-    width: fit-content;
-    height: auto;
+    min-width: 30rem;
+    max-width: 35rem;
   }
 
   .hero h1 {
@@ -333,18 +353,23 @@ img {
     justify-self: center;
   }
 
+/************ Teaser *****************/
 
-/********* Tema oversigt ***********/
+.teaser-inner .img-wrapper img {
+  min-width: 19rem;
+  max-width: 31rem;
+}
 
-.tema-oversigt {
+  /********* Tema oversigt ***********/
+
+  .tema-oversigt {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
   }
 
-.btn-orange {
-  width: 16rem;
-}
-
+  .btn-orange {
+    width: 16rem;
+  }
 }
