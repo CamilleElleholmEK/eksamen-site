@@ -40,6 +40,11 @@ main h2 {
   line-height: 175%;
 }
 
+.indhold-card p {
+  line-height: 140%;
+  margin-top: 1rem;
+}
+
 .indhold-card h3 {
   padding-bottom: 1rem;
 }
@@ -64,6 +69,10 @@ main h2 {
 .link-wrapper a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.link-wrapper a:hover {
+  text-decoration: underline;
 }
 
 .img-wrapper {
@@ -120,7 +129,7 @@ main h2 {
 /* L */
 @media (min-width: 1200px) {
 
-.indhold-card {
+.indhold-card, .img-wrapper {
   min-width: 32rem;
   max-width: 45rem;
   margin-right: 1rem;
