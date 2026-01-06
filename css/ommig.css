@@ -21,6 +21,10 @@ img {
   padding: 1rem 3rem 3rem 3rem;
 }
 
+.om-mig h1 {
+  text-align: center;
+}
+
 .cv-text {
   background-color: var(--background-light);
   border-radius: 20px;
@@ -54,6 +58,34 @@ img {
 }
 /* M */
 @media (min-width: 850px) {
+  .cv-text {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 0;
+    position: relative;
+    overflow: visible;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    box-shadow: none;
+  }
+
+  .cv {
+    display: flex;
+    background-color: var(--background-light);
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+    overflow: visible;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    box-shadow: var(--shadow);
+  }
+
+  .cv .img-wrapper {
+    order: -1;
+  }
 }
 
 /* L */
