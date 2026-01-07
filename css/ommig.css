@@ -78,7 +78,7 @@ img {
 /* M */
 @media (min-width: 850px) {
  img {
-  max-width: 60rem;
+  max-width: 40rem;
   margin: auto;
  } 
 
@@ -90,7 +90,7 @@ img {
 /* L */
 @media (min-width: 1200px) {
 
-.cv-text {
+/* .cv-text {
     background-color: transparent;
     border-radius: 20px;
     padding: 0;
@@ -119,4 +119,4 @@ img {
 
   .cv .img-wrapper {
     order: -1;
-  }}
+  }} */
