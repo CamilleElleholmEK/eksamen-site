@@ -95,9 +95,10 @@ a {
   color: var(--text-color);
 }
 
-.btn-orange:hover, .btn-red:hover {
+.btn-orange:hover,
+.btn-red:hover {
   scale: 1.1;
-} 
+}
 
 .arrow-orange {
   position: absolute;
@@ -147,6 +148,10 @@ a {
 }
 
 .social-link:hover {
+  scale: 1.1;
+}
+
+.logo:hover {
   scale: 1.1;
 }
 
